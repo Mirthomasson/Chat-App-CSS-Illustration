@@ -1,0 +1,328 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(270, 20%, 96%);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+}
+
+.left-background {
+    background-image: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    z-index: -1;
+    position: absolute;
+    height: 87%;
+    width: 40%;
+    border-radius: 0 0 50% 50%;
+    left: -10em;
+}
+
+.right-background {
+    background-image: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    z-index: -1;
+    position: absolute;
+    height: 85%;
+    width: 38%;
+    border-radius: 50% 50% 0 0;
+    right: -17em;
+    bottom: 0;
+    opacity: 0.03;
+}
+
+.container {
+    display: flex;
+    gap: 11.5em;
+    margin: 20em;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40.5em;
+    width: 20em;
+    margin-top: -12em;
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 2em;
+    margin-left: 8em;
+}
+.name-card-top {
+    background-color: hsl(0, 0%, 100%);
+    height: 1.5em;
+    width: 10em;
+    margin-top: -37.25em;
+    border-radius: 0 0 1.2em 1.2em;
+    position: absolute;
+    z-index: 3;
+}
+
+.name-card {
+    background-image: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    height: 5.5em;
+    width: 18.5em;
+    margin-top: -6em;
+    border-radius: 1.5em 1.5em .5em .5em;
+    z-index: 2;
+    box-shadow: 0 12px 10px hsl(271, 36%, 24%, 0.05);
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+    left: -7.8em;
+    top: -2.2em;
+    z-index: 3;
+    transition: border-color .75s;
+  }
+
+  .arrow:hover {
+    border-color: hsl(293, 100%, 63%);
+    cursor: pointer;
+    transition: border-color .57s;
+  }
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.card-photo img {
+   border-radius: 50%;
+   height: 2em;
+   position: relative;
+   top: -3.5em;
+   left: -6em;
+   border: 1px solid white;
+   z-index: 3;
+   transition: transform .75s;
+}
+
+.card-photo img:hover {
+    transform: scale(150%);
+    transition: transform .75s;
+    cursor: pointer;
+}
+
+.card-info {
+    font-weight: 400;
+    color: hsl(270, 20%, 96%);
+    top: -6em;
+    left: -1.5em;
+    position: relative;
+    line-height: .4em;
+    z-index: 3;
+}
+
+.card-info h1 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card-info p {
+    font-size: 10px;
+    color: hsl(276, 100%, 81%);
+}
+
+.dots {
+    right: -12em;
+    top: -1.5em;
+    position: relative;
+    transition: color .75s;
+}
+
+.dots:hover {
+    color: hsl(264, 100%, 61%);
+    transition: color .75s;
+    cursor: pointer;
+}
+
+.texts {
+    background-color: hsl(270, 20%, 96%);
+    width: 18.5em;
+    height: 33em;
+    position: relative;
+    margin-top: -16.5em;
+    padding-top: 2em;
+    bottom: -8.75em;
+    z-index: 1;
+    border-radius: 0 0 1.5em 1.5em;
+}
+
+.sent {
+    font-size: 10px;
+    color: hsl(276, 55%, 52%);
+    background-image: linear-gradient(hsl(293, 100%, 63%, .05), hsl(264, 100%, 61%, .05));
+    height: auto;
+    width: 14em;
+    border-radius: 1.2em 1.2em 1.2em .4em;
+    padding: .75em 1em;
+    margin-left: 1em;
+}
+
+.received-1 {
+    color: hsl(271, 15%, 43%);
+    width: 3.5em;
+    position: relative;
+    right: -6em;
+    border-radius: .75em;
+    margin: 10px 0 0 4px;
+}
+
+.received-2 {
+    font-size: 10px;
+    color: hsl(271, 15%, 43%);
+    background-color: hsl(0, 0%, 100%);
+    width: 14em;
+    border-radius: 1.2em 1.2em .4em 1.2em;
+    padding: .75em;
+    margin-left: 1em;
+    position: relative;
+    right: -12em;
+    box-shadow: 0 12px 10px hsl(271, 36%, 24%, 0.05);
+}
+
+.received-3 {
+    font-size: 10px;
+    color: hsl(271, 15%, 43%);
+    background-color: hsl(0, 0%, 100%);
+    width: 8.25em;
+    border-radius: 1.2em 1.2em .4em 1.2em;
+    padding: .75em;
+    margin-left: 1em;
+    position: relative;
+    right: -17.5em;
+    box-shadow: 0 12px 10px hsl(271, 36%, 24%, 0.05);
+}
+
+.walk-options {
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%)); 
+    height: auto;
+    width: 18em;
+    border-radius: 1.2em 1.2em 1.2em .4em;
+    padding: 1em;
+    margin: 1em; 
+    font-size: 10px;  
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 12px 10px hsl(271, 36%, 24%, 0.05);
+}
+
+input[type="radio" i] {
+    cursor: pointer;
+    top: 3px;
+    position: relative;
+    margin-right: 1em;
+    appearance: none;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    background-color: rgb(254, 146, 254);
+    outline: solid 2px rgb(254, 146, 254);
+    outline-offset: -1px;
+}
+
+input[type="radio" i]:checked {
+    background: rgb(254, 146, 254);
+    border: 3px solid hsl(293, 100%, 63%);
+
+}
+
+.walk-options span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    left: 4em;
+    position: relative;
+    margin-top: -1em;
+}
+
+.new-text {
+    position: relative;
+    z-index: 3;
+    bottom: -5em;
+    background-color: hsl(0, 0%, 100%);
+    height: 2.75em;
+    width: 17em;
+    border-radius: 2em;
+    color: hsl(270, 20%, 85%);
+}
+
+.new-text p {
+    font-size: 12px;
+    margin: 1.25em 1.75em;
+}
+
+.submit-arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    padding-left: -2em;
+    position: relative;
+    z-index: 3;
+    transition: border-color .75s;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg)
+}
+
+.right:hover {
+    cursor: pointer;
+    border-color: hsl(264, 100%, 61%);
+    transition: border-color .57s;
+}
+
+button {
+    border-radius: 50%;
+    height: 2.1em;
+    background-color: black;
+    border: 3px solid black;
+    padding-right: 8px;
+    padding-bottom: 2px;
+    left: 17.75em;
+    bottom: 2.75em;
+    position: relative;
+}
+
+.description {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    height: auto;
+    width: 34em;
+}
+
+.description h1 {
+    font-size: 3.25em;
+    font-weight: 500;
+    margin-bottom: .2em;
+    color: hsl(271, 36%, 24%);
+}
+
+.description p {
+   color: hsl(270, 7%, 64%);
+   line-height: 1.75em;
+   font-size: 1.2em;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    top: -13em;
+}
+
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
