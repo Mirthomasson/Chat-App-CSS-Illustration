@@ -2,12 +2,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: hsl(270, 20%, 96%);
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     font-family: 'Rubik', sans-serif;
+    overflow: hidden;
 }
 
 .left-background {
@@ -319,7 +319,7 @@ button {
     font-size: 11px;
     text-align: center;
     position: relative;
-    top: -28em;
+    top: -15em;
 }
 
 
