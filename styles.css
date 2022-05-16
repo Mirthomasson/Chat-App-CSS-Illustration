@@ -18,7 +18,6 @@ body {
     width: 40%;
     border-radius: 0 0 50% 50%;
     left: -10em;
-    overflow: hidden;
 }
 
 .right-background {
@@ -31,7 +30,6 @@ body {
     right: -17em;
     bottom: 0;
     opacity: 0.03;
-    overflow: hidden;
 }
 
 .container {
