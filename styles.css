@@ -404,7 +404,7 @@ button {
 
     .description {
         display: flex;
-        max-width: 60%;
+        max-width: 40%;
         margin-top: -8em;
         margin-left: 7.5em;
         align-items: center;
@@ -419,6 +419,7 @@ button {
         scrollbar-width: none;  
       }
     .attribution {
+        display: flex;
         margin-top: 5em;
         margin-bottom: -12em;
     }
@@ -426,5 +427,12 @@ button {
     .left-background {
         top: -20em;
         width: 100%;
+        height: 100%;
+        position: fixed;
+    }
+    .right-background {
+        height: 100%;
+        width: 100%;
+        position: fixed;
     }
 }
